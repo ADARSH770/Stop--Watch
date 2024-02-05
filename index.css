@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+.container{
+    background-color:rgb(183, 179, 179);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#box{
+    width: 600px;
+    height: 350px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('beach.jpeg');
+    border-radius: 10px;
+    box-shadow: 2px 3px brown;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    z-index: 2;
+    border-color: 1px solid black;
+    animation-duration: 3s;
+    animation-name: zap;
+}
+@keyframes zap{
+
+}
+#content{
+    width: 600px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    gap:10px;
+    align-items: center;
+    color: white;
+}
+#control{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+#play{
+    border-radius: 50%;
+    padding: 3px;
+    background-color: orange;
+}
+#restart{
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgb(183, 179, 179);
+  
+}
+#pause{
+    border-radius: 50%;
+    padding: 4px;
+    background-color:rgb(183, 179, 179);
+ 
+  
+}
+#pause:hover{
+    background-color:white;
+    
+}
+#play:hover{
+    background-color: white;
+}
+    
+#restart:hover{
+    background-color: white;
+    
+}
+
+@media (max-width:600px) {
+    
+    .container{
+        width: 100%;
+        
+    }
+    #box{
+        width: 50%;
+    }
+    #content{
+        width: 200px;
+        gap:5px;
+    }
+    #control{
+        width: 200px;
+    }
+}
